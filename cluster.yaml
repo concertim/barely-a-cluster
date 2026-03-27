@@ -142,9 +142,9 @@ resources:
                   sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 
                   # Setup /etc/hosts
-                  echo "10.10.0.101    login1.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.1      node01.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.2      node02.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.0.101    login1 login1.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.1      node01 node01.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.2      node02 node02.$clustername.cluster.network" >> /etc/hosts
 
                   # Setup NFS exports
                   dnf -y install nfs-utils
@@ -216,9 +216,9 @@ resources:
                   sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 
                   # Setup /etc/hosts
-                  echo "10.10.0.101    login1.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.1      node01.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.2      node02.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.0.101    login1 login1.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.1      node01 node01.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.2      node02 node02.$clustername.cluster.network" >> /etc/hosts
 
                   # Setup NFS exports
                   dnf -y install nfs-utils
@@ -288,9 +288,9 @@ resources:
                   sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 
                   # Setup /etc/hosts
-                  echo "10.10.0.101    login1.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.1      node01.$clustername.cluster.network" >> /etc/hosts
-                  echo "10.10.1.2      node02.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.0.101    login1 login1.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.1      node01 node01.$clustername.cluster.network" >> /etc/hosts
+                  echo "10.10.1.2      node02 node02.$clustername.cluster.network" >> /etc/hosts
 
                   # Setup NFS exports
                   dnf -y install nfs-utils
