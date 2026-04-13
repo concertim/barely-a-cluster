@@ -24,8 +24,8 @@ parameters:
 
   image:
     type: string
-    label: Image ID (default rocky 9.4)
-    default: 'd6ccf235-d285-48de-ae86-eb1b261370cc'
+    label: Image ID (default rocky 9.7)
+    default: 'e52748f1-2e09-4267-99ee-4b3b2da74633'
 
   login-flavour:
     type: string
