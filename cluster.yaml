@@ -157,6 +157,16 @@ resources:
                 path: /root/setup.sh
                 permissions: '0600'
                 owner: root:root
+              - content: |
+                  #!/bin/bash
+                  # Script to run commands across all the systems
+                  for i in login1 node01 node02 ; do
+                      ssh -o StrictHostKeyChecking=no $i "$*" &
+                  done
+                  wait
+                path: /usr/bin/doall
+                permissions: '0755'
+                owner: root:root
             runcmd: 
               - bash /root/setup.sh >> /root/setup.log
           params:
