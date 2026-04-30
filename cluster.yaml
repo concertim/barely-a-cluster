@@ -128,7 +128,7 @@ resources:
         str_replace:
           template: |
             #cloud-config
-            fqdn: login1.$clustername.alces.network
+            fqdn: login1.$clustername.cluster.network
             users:
               - default
               - name: rocky
@@ -212,7 +212,7 @@ resources:
         str_replace:
           template: |
             #cloud-config
-            fqdn: node01.$clustername.alces.network
+            fqdn: node01.$clustername.cluster.network
             users:
               - default
               - name: rocky
@@ -284,7 +284,7 @@ resources:
         str_replace:
           template: |
             #cloud-config
-            fqdn: node02.$clustername.alces.network
+            fqdn: node02.$clustername.cluster.network
             users:
               - default
               - name: rocky
